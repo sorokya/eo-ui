@@ -1,0 +1,1 @@
+The images in this directory will automatically be packed into an atlas

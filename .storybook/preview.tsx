@@ -1,6 +1,6 @@
 import type { Preview } from '@storybook/react-vite';
-import '../src/img/atlas.css';
-import '../src/fonts/fonts.css';
+import '../src/atlas.css';
+import '../src/fonts.css';
 import '../src/variables.css';
 import {
   DocsContainer,

@@ -1,9 +1,9 @@
 .button {
-  background: url("./wood.png");
+  background: url("../assets/wood.png");
   outline: none;
   border-style: solid;
   border-width: 2px 1px 1px 1px;
-  border-image: url("./border-button.png") 3 2 2 2 fill;
+  border-image: url("../assets/border-button.png") 3 2 2 2 fill;
   border-image-repeat: stretch;
   cursor: pointer;
   display: inline-flex;
@@ -52,7 +52,8 @@
   display: block;
   width: 16px;
   height: 15px;
-  background: url("./atlas.png") var(--eo-ui-screw-x) var(--eo-ui-screw-y);
+  background: url("../assets/atlas.png") var(--eo-ui-screw-x)
+    var(--eo-ui-screw-y);
 }
 
 .button.large > span {

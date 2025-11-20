@@ -1,14 +1,14 @@
 @font-face {
   font-family: ms_sans_serif;
-  src: url("./ms_sans_serif.woff2");
+  src: url("./assets/ms_sans_serif.woff2");
 }
 
 @font-face {
   font-family: ms_sans_serif_bold;
-  src: url("./ms_sans_serif_bold.woff2");
+  src: url("./assets/ms_sans_serif_bold.woff2");
 }
 
 @font-face {
   font-family: forte;
-  src: url("./forte.woff2");
+  src: url("./assets/forte.woff2");
 }

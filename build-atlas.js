@@ -4,8 +4,8 @@ import { globby } from 'globby';
 import Spritesmith from 'spritesmith';
 
 const SRC_DIR = './atlas';
-const OUT_ATLAS = './src/img/atlas.png';
-const OUT_CSS = './src/img/atlas.css';
+const OUT_ATLAS = './src/assets/atlas.png';
+const OUT_CSS = './src/atlas.css';
 
 async function main() {
   await fs.ensureDir('./dist');

@@ -1,5 +1,5 @@
-import './img/atlas.css';
-import './fonts/fonts.css';
+import './atlas.css';
+import './fonts.css';
 import './variables.css';
 
 export * from './Button/button';

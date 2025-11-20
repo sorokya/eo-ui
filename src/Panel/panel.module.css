@@ -1,0 +1,16 @@
+.panel {
+  background-color: rgba(0, 0, 0, var(--eo-ui-panel-background-opacity));
+  border-style: solid;
+  border-image: var(--eo-ui-border-thin);
+  font-family: var(--eo-ui-panel-font);
+  padding: var(--eo-ui-panel-padding);
+  color: var(--eo-ui-panel-text-color);
+}
+
+.medium {
+  border-image: var(--eo-ui-border-medium);
+}
+
+.bold {
+  font-family: var(--eo-ui-panel-font-bold);
+}

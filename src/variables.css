@@ -1,6 +1,22 @@
 :root {
+  --eo-ui-background-url: url("./assets/wood.png");
   --eo-ui-button-text-color: #e7d79a;
   --eo-ui-button-stroke-color: #211909;
   --eo-ui-button-hover-text-color: #fef4d1;
   --eo-ui-button-hover-text-shadow: #fff;
+  --eo-ui-button-small-font-size: 2.1em;
+  --eo-ui-button-small-height: 35px;
+  --eo-ui-button-large-font-size: 2.4em;
+  --eo-ui-button-large-height: 45px;
+  --eo-ui-button-border-width: 2px 1px 1px 1px;
+  --eo-ui-button-font-family:
+    "forte", "ms_sans_serif_bold", "ms_sans_serif", sans-serif;
+
+  --eo-ui-panel-text-color: #fff;
+  --eo-ui-panel-font: "ms_sans_serif", sans-serif;
+  --eo-ui-panel-font-bold: "ms_sans_serif_bold", sans-serif;
+
+  --eo-ui-border-button: url("./assets/border-button.png") 3 2 2 2 fill;
+  --eo-ui-border-thin: url("./assets/border-thin.png") 9 / 9px 9px;
+  --eo-ui-border-medium: url("./assets/border-medium.png") 9 / 9px 9px;
 }

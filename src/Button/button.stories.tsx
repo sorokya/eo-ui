@@ -18,6 +18,20 @@ const meta: Meta<typeof Button> = {
 export default meta;
 type Story = StoryObj<typeof Button>;
 
+export const Default: Story = {
+  args: {
+    children: 'OK!',
+  },
+  parameters: {
+    docs: {
+      description: {
+        story:
+          'The small variant has a smaller font. Suitable for secondary actions.',
+      },
+    },
+  },
+};
+
 export const Large: Story = {
   args: {
     children: 'Play Game',
@@ -28,20 +42,6 @@ export const Large: Story = {
       description: {
         story:
           'The large variant has a larger font and is decorated with screws. Suitable for primary actions.',
-      },
-    },
-  },
-};
-
-export const Small: Story = {
-  args: {
-    children: 'OK!',
-  },
-  parameters: {
-    docs: {
-      description: {
-        story:
-          'The small variant (default) has a smaller font. Suitable for secondary actions.',
       },
     },
   },

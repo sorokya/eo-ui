@@ -1,0 +1,6 @@
+.label {
+  font-family: var(--eo-ui-label-font);
+  font-size: var(--eo-ui-label-font-size);
+  color: var(--eo-ui-label-color);
+  text-shadow: var(--eo-ui-label-text-shadow);
+}

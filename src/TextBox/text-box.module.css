@@ -1,0 +1,10 @@
+.text-box {
+  font-family: var(--eo-ui-text-box-font);
+  font-size: var(--eo-ui-text-box-font-size);
+  color: var(--eo-ui-text-box-color);
+  background-color: rgba(0, 0, 0, var(--eo-ui-text-box-background-opacity));
+  border-width: var(--eo-ui-border-button-width);
+  border-image: var(--eo-ui-border-button);
+  outline: none;
+  padding: var(--eo-ui-text-box-padding);
+}

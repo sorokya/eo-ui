@@ -1,10 +1,8 @@
 .button {
   background: var(--eo-ui-background-url);
   outline: none;
-  border-style: solid;
-  border-width: var(--eo-ui-button-border-width);
+  border-width: var(--eo-ui-border-button-width);
   border-image: var(--eo-ui-border-button);
-  border-image-repeat: stretch;
   cursor: pointer;
   display: inline-flex;
   align-items: center;

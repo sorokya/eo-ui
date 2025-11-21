@@ -1,11 +1,12 @@
 import type React from 'react';
+import type { ReactNode } from 'react';
 import classes from './panel.module.css';
 
 type PanelProps = {
   /**
    * Content to be displayed inside the panel.
    */
-  children: React.ReactNode;
+  children: ReactNode;
   /**
    * Style of the panel border, either 'thin' or 'medium'
    * @default 'thin'

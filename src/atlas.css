@@ -1,5 +1,13 @@
 /* Auto-generated atlas variables */
 :root {
+  --eo-ui-checkbox-checked-x: -30px;
+  --eo-ui-checkbox-checked-y: -15px;
+  --eo-ui-checkbox-checked-w: 15px;
+  --eo-ui-checkbox-checked-h: 15px;
+  --eo-ui-checkbox-x: -46px;
+  --eo-ui-checkbox-y: -0px;
+  --eo-ui-checkbox-w: 15px;
+  --eo-ui-checkbox-h: 15px;
   --eo-ui-note-x: -0px;
   --eo-ui-note-y: -0px;
   --eo-ui-note-w: 30px;

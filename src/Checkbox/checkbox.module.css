@@ -1,0 +1,30 @@
+.checkbox {
+  display: inline-block;
+  position: relative;
+  width: var(--eo-ui-checkbox-w);
+  height: var(--eo-ui-checkbox-h);
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.checkbox::after {
+  content: " ";
+  display: block;
+  width: var(--eo-ui-checkbox-w);
+  height: var(--eo-ui-checkbox-h);
+  background-image: url("../assets/atlas.png");
+  background-position: var(--eo-ui-checkbox-x) var(--eo-ui-checkbox-y);
+  pointer-events: none;
+}
+
+.checked::after {
+  background-position: var(--eo-ui-checkbox-checked-x)
+    var(--eo-ui-checkbox-checked-y);
+}

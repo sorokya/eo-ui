@@ -24,6 +24,8 @@ type PanelProps = {
    * @default false
    */
   bold?: boolean;
+  /** Additional class name for the panel */
+  className?: string;
 };
 
 export function Panel({
@@ -32,11 +34,12 @@ export function Panel({
   padding = '4px',
   backgroundOpacity = 0.5,
   bold = false,
+  className = '',
 }: PanelProps) {
   const borderClass = borderStyle === 'medium' ? classes.medium : '';
   return (
     <div
-      className={`${classes.panel} ${borderClass} ${bold ? classes.bold : ''}`}
+      className={`${classes.panel} ${borderClass} ${bold ? classes.bold : ''} ${className}`}
       style={
         {
           '--eo-ui-panel-padding': padding,

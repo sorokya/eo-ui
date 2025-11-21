@@ -14,6 +14,8 @@ type TextBoxProps = {
   backgroundOpacity?: number;
   /** Padding inside the text box */
   padding?: string;
+  /** Additional class name for the text box */
+  className?: string;
 };
 
 export function TextBox({
@@ -23,11 +25,12 @@ export function TextBox({
   onChange = () => {},
   backgroundOpacity = 0.4,
   padding = '4px',
+  className = '',
 }: TextBoxProps) {
   return (
     <input
       id={id}
-      className={classes['text-box']}
+      className={`${classes['text-box']} ${className}`}
       type={type}
       value={value}
       onChange={onChange}

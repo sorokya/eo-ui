@@ -16,6 +16,8 @@ type ButtonProps = {
   type?: 'button' | 'submit' | 'reset';
   /** Optional click handler */
   onClick?: () => void;
+  /** Additional class name for the button */
+  className?: string;
 };
 
 export function Button({
@@ -23,11 +25,12 @@ export function Button({
   variant = 'small',
   type = 'button',
   onClick = () => {},
+  className = '',
 }: ButtonProps) {
   return (
     <button
       type={type}
-      className={`${classes.button} ${variant === 'large' ? classes.large : ''}`}
+      className={`${classes.button} ${variant === 'large' ? classes.large : ''} ${className}`}
       onClick={onClick}
     >
       <span>{children}</span>

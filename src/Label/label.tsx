@@ -6,11 +6,13 @@ type LabelProps = {
   htmlFor?: string;
   /** The text content of the label */
   children: ReactNode;
+  /** Additional class name for the label */
+  className?: string;
 };
 
-export function Label({ htmlFor, children }: LabelProps) {
+export function Label({ htmlFor, children, className = '' }: LabelProps) {
   return (
-    <label htmlFor={htmlFor} className={classes.label}>
+    <label htmlFor={htmlFor} className={`${classes.label} ${className}`}>
       {children}
     </label>
   );

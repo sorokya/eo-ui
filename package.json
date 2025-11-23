@@ -44,7 +44,7 @@
     "@types/react": "^19.2.6",
     "@types/react-dom": "^19.2.3",
     "@types/rollup-plugin-peer-deps-external": "^2.2.6",
-    "@vueless/storybook-dark-mode": "^10.0.2",
+    "@vueless/storybook-dark-mode": "^10.0.3",
     "fs-extra": "^11.3.2",
     "gh-pages": "^6.3.0",
     "globby": "^16.0.0",

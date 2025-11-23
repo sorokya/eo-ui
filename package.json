@@ -5,6 +5,8 @@
   "module": "index.js",
   "types": "types/index.d.ts",
   "type": "module",
+  "repository": "https://github.com/sorokya/eo-ui",
+  "homepage": "https://sorokya.github.io/eo-ui/",
   "scripts": {
     "build": "node ./build-atlas.js && tsc && rollup -c && cp package.json dist/ && cp README.md dist/ && cp LICENSE.txt dist/",
     "line": "biome check .",

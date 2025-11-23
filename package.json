@@ -1,5 +1,5 @@
 {
-  "name": "eo-ui",
+  "name": "@sorokya/eo-ui",
   "version": "0.1.0",
   "description": "Component library based on Endless Online for react",
   "module": "index.js",

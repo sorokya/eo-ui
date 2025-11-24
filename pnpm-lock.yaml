@@ -32,7 +32,7 @@ importers:
         version: 8.0.2(rollup@4.53.3)
       '@storybook/addon-docs':
         specifier: ^10.0.8
-        version: 10.0.8(@types/react@19.2.6)(esbuild@0.25.12)(rollup@4.53.3)(storybook@10.0.8(@testing-library/dom@10.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.2.2(@types/node@24.10.1)))(vite@7.2.2(@types/node@24.10.1))
+        version: 10.0.8(@types/react@19.2.7)(esbuild@0.25.12)(rollup@4.53.3)(storybook@10.0.8(@testing-library/dom@10.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.2.2(@types/node@24.10.1)))(vite@7.2.2(@types/node@24.10.1))
       '@storybook/addon-onboarding':
         specifier: ^10.0.8
         version: 10.0.8(storybook@10.0.8(@testing-library/dom@10.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.2.2(@types/node@24.10.1)))
@@ -44,10 +44,10 @@ importers:
         version: 10.0.4
       '@types/react':
         specifier: ^19.2.6
-        version: 19.2.6
+        version: 19.2.7
       '@types/react-dom':
         specifier: ^19.2.3
-        version: 19.2.3(@types/react@19.2.6)
+        version: 19.2.3(@types/react@19.2.7)
       '@types/rollup-plugin-peer-deps-external':
         specifier: ^2.2.6
         version: 2.2.6(rollup@4.53.3)
@@ -719,8 +719,8 @@ packages:
     peerDependencies:
       '@types/react': ^19.2.0
 
-  '@types/react@19.2.6':
-    resolution: {integrity: sha512-p/jUvulfgU7oKtj6Xpk8cA2Y1xKTtICGpJYeJXz2YVO2UcvjQgeRMLDGfDeqeRW2Ta+0QNFwcc8X3GH8SxZz6w==}
+  '@types/react@19.2.7':
+    resolution: {integrity: sha512-MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==}
 
   '@types/resolve@1.20.2':
     resolution: {integrity: sha512-60BCwRFOZCQhDncwQdxxeOEEkbc5dIMccYLwbxsS4TUNeVECQ/pBJ0j09mrHOl/JJvpRPGwO9SvE4nR2Nb/a4Q==}
@@ -2580,10 +2580,10 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@mdx-js/react@3.1.1(@types/react@19.2.6)(react@18.3.1)':
+  '@mdx-js/react@3.1.1(@types/react@19.2.7)(react@18.3.1)':
     dependencies:
       '@types/mdx': 2.0.13
-      '@types/react': 19.2.6
+      '@types/react': 19.2.7
       react: 18.3.1
 
   '@nodelib/fs.scandir@2.1.5':
@@ -2716,9 +2716,9 @@ snapshots:
 
   '@sindresorhus/merge-streams@4.0.0': {}
 
-  '@storybook/addon-docs@10.0.8(@types/react@19.2.6)(esbuild@0.25.12)(rollup@4.53.3)(storybook@10.0.8(@testing-library/dom@10.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.2.2(@types/node@24.10.1)))(vite@7.2.2(@types/node@24.10.1))':
+  '@storybook/addon-docs@10.0.8(@types/react@19.2.7)(esbuild@0.25.12)(rollup@4.53.3)(storybook@10.0.8(@testing-library/dom@10.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.2.2(@types/node@24.10.1)))(vite@7.2.2(@types/node@24.10.1))':
     dependencies:
-      '@mdx-js/react': 3.1.1(@types/react@19.2.6)(react@18.3.1)
+      '@mdx-js/react': 3.1.1(@types/react@19.2.7)(react@18.3.1)
       '@storybook/csf-plugin': 10.0.8(esbuild@0.25.12)(rollup@4.53.3)(storybook@10.0.8(@testing-library/dom@10.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.2.2(@types/node@24.10.1)))(vite@7.2.2(@types/node@24.10.1))
       '@storybook/icons': 1.6.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@storybook/react-dom-shim': 10.0.8(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(storybook@10.0.8(@testing-library/dom@10.4.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@7.2.2(@types/node@24.10.1)))
@@ -2873,11 +2873,11 @@ snapshots:
       '@types/node': 24.10.1
       postcss: 8.5.6
 
-  '@types/react-dom@19.2.3(@types/react@19.2.6)':
+  '@types/react-dom@19.2.3(@types/react@19.2.7)':
     dependencies:
-      '@types/react': 19.2.6
+      '@types/react': 19.2.7
 
-  '@types/react@19.2.6':
+  '@types/react@19.2.7':
     dependencies:
       csstype: 3.2.3
 

@@ -1,0 +1,275 @@
+# EO-UI Component Library Reference
+
+## Overview
+EO-UI (@sorokya/eo-ui) is a React component library designed to mimic the original game components from Endless Online (https://endless-online.com). It provides styled UI components with a retro game aesthetic.
+
+Package: @sorokya/eo-ui
+Version: 0.1.1
+Repository: https://github.com/sorokya/eo-ui
+Documentation: https://sorokya.github.io/eo-ui/
+
+## Installation
+npm install @sorokya/eo-ui
+# or
+pnpm add @sorokya/eo-ui
+# or
+yarn add @sorokya/eo-ui
+
+## Requirements
+- React: ^18.0.0
+- React-DOM: ^18.0.0
+
+## Available Components
+
+### 1. Button
+A styled button component with two size variants.
+
+Import:
+```jsx
+import { Button } from '@sorokya/eo-ui';
+```
+
+Props:
+- children: string (required) - The text content of the button
+- variant?: 'small' | 'large' - Size variant of the button (default: 'small')
+- type?: 'button' | 'submit' | 'reset' - HTML button type attribute (default: 'button')
+- onClick?: () => void - Click event handler (optional)
+- className?: string - Additional CSS class name (optional)
+
+Example:
+```jsx
+<Button variant="large" onClick={() => console.log('clicked')}>
+  Click Me
+</Button>
+
+<Button type="submit">Submit</Button>
+```
+
+---
+
+### 2. Checkbox
+A styled checkbox component matching the Endless Online aesthetic.
+
+Import:
+```jsx
+import { Checkbox } from '@sorokya/eo-ui';
+```
+
+Props:
+- id?: string - HTML id attribute for the checkbox (optional)
+- checked?: boolean - Whether the checkbox is checked (default: false)
+- onChange?: (e: ChangeEvent<HTMLInputElement>) => void - Change event handler (optional)
+- className?: string - Additional CSS class name (optional)
+
+Example:
+```jsx
+<Checkbox
+  id="terms"
+  checked={isChecked}
+  onChange={(e) => setIsChecked(e.target.checked)}
+/>
+```
+
+---
+
+### 3. Label
+A text label component, typically used with form inputs.
+
+Import:
+```jsx
+import { Label } from '@sorokya/eo-ui';
+```
+
+Props:
+- children: ReactNode (required) - The text or content of the label
+- htmlFor?: string - The id of the associated form element (optional)
+- className?: string - Additional CSS class name (optional)
+
+Example:
+```jsx
+<Label htmlFor="username">Username:</Label>
+
+<Label>
+  <span>Custom Content</span>
+</Label>
+```
+
+---
+
+### 4. Panel
+A container component with customizable border, padding, and background.
+
+Import:
+```jsx
+import { Panel } from '@sorokya/eo-ui';
+```
+
+Props:
+- children: ReactNode (required) - Content to display inside the panel
+- borderStyle?: 'thin' | 'medium' - Style of the panel border (default: 'thin')
+- padding?: string - Padding inside the panel as a CSS value (default: '4px')
+- backgroundOpacity?: number - Opacity of the panel background from 0 to 1 (default: 0.5)
+- bold?: boolean - Whether text should be bold (default: false)
+- className?: string - Additional CSS class name (optional)
+
+Example:
+```jsx
+<Panel borderStyle="medium" padding="16px" backgroundOpacity={0.8}>
+  <h1>Panel Title</h1>
+  <p>Panel content goes here</p>
+</Panel>
+
+<Panel bold>
+  <p>Bold text panel</p>
+</Panel>
+```
+
+---
+
+### 5. TextBox
+A styled text input component supporting text and password types.
+
+Import:
+```jsx
+import { TextBox } from '@sorokya/eo-ui';
+```
+
+Props:
+- id?: string - HTML id attribute for the input (optional)
+- type?: 'text' | 'password' - Type of input field (default: 'text')
+- value?: string - Current value of the text box (default: '')
+- onChange?: ChangeEventHandler<HTMLInputElement> - Change event handler (optional)
+- backgroundOpacity?: number - Opacity of the background from 0 to 1 (default: 0.4)
+- padding?: string - Padding inside the text box as a CSS value (default: '4px')
+- className?: string - Additional CSS class name (optional)
+
+Example:
+```jsx
+<TextBox
+  id="username"
+  value={username}
+  onChange={(e) => setUsername(e.target.value)}
+  padding="8px"
+/>
+
+<TextBox
+  type="password"
+  value={password}
+  onChange={(e) => setPassword(e.target.value)}
+  backgroundOpacity={0.6}
+/>
+```
+
+---
+
+## Common Patterns
+
+### Form with Label, TextBox, and Button
+```jsx
+import { Label, TextBox, Button, Panel } from '@sorokya/eo-ui';
+
+function LoginForm() {
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+
+  return (
+    <Panel borderStyle="medium" padding="16px">
+      <Label htmlFor="username">Username</Label>
+      <TextBox
+        id="username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      />
+
+      <Label htmlFor="password">Password</Label>
+      <TextBox
+        id="password"
+        type="password"
+        value={password}
+        onChange={(e) => setPassword(e.target.value)}
+      />
+
+      <Button variant="large" type="submit">Login</Button>
+    </Panel>
+  );
+}
+```
+
+### Checkbox with Label
+```jsx
+import { Checkbox, Label } from '@sorokya/eo-ui';
+
+function TermsAcceptance() {
+  const [accepted, setAccepted] = useState(false);
+
+  return (
+    <div>
+      <Checkbox
+        id="terms"
+        checked={accepted}
+        onChange={(e) => setAccepted(e.target.checked)}
+      />
+      <Label htmlFor="terms">I accept the terms and conditions</Label>
+    </div>
+  );
+}
+```
+
+### Nested Panels
+```jsx
+import { Panel } from '@sorokya/eo-ui';
+
+function Dashboard() {
+  return (
+    <Panel borderStyle="medium" padding="16px" backgroundOpacity={0.7}>
+      <h1>Dashboard</h1>
+
+      <Panel padding="8px" backgroundOpacity={0.5}>
+        <h2>Section 1</h2>
+        <p>Content here</p>
+      </Panel>
+
+      <Panel padding="8px" backgroundOpacity={0.5}>
+        <h2>Section 2</h2>
+        <p>More content</p>
+      </Panel>
+    </Panel>
+  );
+}
+```
+
+---
+
+## Styling Notes
+
+1. All components accept a `className` prop for custom styling
+2. Panel and TextBox support CSS custom properties for dynamic styling:
+   - Panel: `--eo-ui-panel-padding`, `--eo-ui-panel-background-opacity`
+   - TextBox: `--eo-ui-text-box-background-opacity`, `--eo-ui-text-box-padding`
+3. Components are styled to match the Endless Online game aesthetic
+4. Default styles are applied via CSS modules
+
+---
+
+## Tips for LLM Agents
+
+1. Always import components from '@sorokya/eo-ui'
+2. Button children must be a string (not ReactNode)
+3. Use controlled components for TextBox and Checkbox (manage state in parent)
+4. Panel is great for creating container sections with consistent styling
+5. Combine components naturally: Label + TextBox, Checkbox + Label, etc.
+6. For opacity values, use numbers between 0 and 1 (e.g., 0.5 for 50%)
+7. Padding and other CSS values should be strings with units (e.g., '4px', '1rem')
+8. The library is designed for retro game UIs, so it works best with that aesthetic
+
+---
+
+## Component Summary Table
+
+| Component | Purpose | Key Props | Required Props |
+|-----------|---------|-----------|----------------|
+| Button | Clickable button | variant, type, onClick | children (string) |
+| Checkbox | Checkbox input | checked, onChange | - |
+| Label | Form label | htmlFor | children |
+| Panel | Container with border | borderStyle, padding, backgroundOpacity, bold | children |
+| TextBox | Text/password input | type, value, onChange, backgroundOpacity | - |

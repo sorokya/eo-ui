@@ -4,20 +4,8 @@
 EO-UI (@sorokya/eo-ui) is a React component library designed to mimic the original game components from Endless Online (https://endless-online.com). It provides styled UI components with a retro game aesthetic.
 
 Package: @sorokya/eo-ui
-Version: 0.1.1
 Repository: https://github.com/sorokya/eo-ui
 Documentation: https://sorokya.github.io/eo-ui/
-
-## Installation
-npm install @sorokya/eo-ui
-# or
-pnpm add @sorokya/eo-ui
-# or
-yarn add @sorokya/eo-ui
-
-## Requirements
-- React: ^18.0.0
-- React-DOM: ^18.0.0
 
 ## Available Components
 
